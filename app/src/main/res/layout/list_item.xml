@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F8E494"
+    android:id="@+id/full_layout"
+    android:layout_margin="1dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="demo"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/registrationNumTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="100145"
+        app:layout_constraintTop_toBottomOf="@id/nameTextView"
+        android:layout_marginStart="4dp"
+        />
+
+
+</RelativeLayout>

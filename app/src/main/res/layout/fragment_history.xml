@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".HistoryFragment">
+    <RelativeLayout
+        android:background="@drawable/banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp">
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="65dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="left"
+            android:text="Previous Report"
+            android:textColor="@color/White"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:paddingLeft="@dimen/_6sdp"
+        android:paddingEnd="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_120sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:background="@drawable/top_rect_gradient"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/white"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/ProjectGray"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/full_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:background="@drawable/gradient_bg_orenge">
+            <TextView
+                android:layout_marginEnd="@dimen/_29sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:background="@color/Red"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="left"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="3dp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="2dp"
+                android:text=" ₹ 2450.00"
+                android:textColor="@color/White"
+                android:textSize="13sp" />
+            <LinearLayout
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="@dimen/_60sdp"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_7sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="left"
+                    android:text="Royal Red"
+                    android:textColor="@color/Black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:background="#735858"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="2dp"
+                    android:text="#7566r46"
+                    android:textColor="@color/White"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_marginEnd="3dp"
+                android:id="@+id/arrow1"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:padding="4dp"
+                android:src="@drawable/down_arrow" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:el_duration="500"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_marginEnd="@dimen/_29sdp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/txt_ans"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:text="31st-Dec-2024"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/Gray"
+                    android:textSize="11sp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:textStyle="bold"
+                        android:text="John Rechard"
+                        android:textColor="@color/Dark_Slate_Grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_5sdp"
+
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="left"
+                        android:text="Phone-+91-753355345"
+                        android:textColor="@color/Dark_Slate_Grey"
+                        android:textSize="9sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </net.cachapa.expandablelayout.ExpandableLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/white"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/Blue_Eyes"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/full_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:background="@drawable/gradient_bg_orenge">
+                <TextView
+                    android:layout_marginEnd="@dimen/_29sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/Red"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="2dp"
+                    android:text=" ₹ 4450.00"
+                    android:textColor="@color/White"
+                    android:textSize="13sp" />
+                <LinearLayout
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="@dimen/_60sdp"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_7sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="left"
+                        android:text="Gereen"
+                        android:textColor="@color/Black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:background="#735858"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingBottom="2dp"
+                        android:text="#7566r46"
+                        android:textColor="@color/White"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginEnd="3dp"
+                    android:id="@+id/arrow1"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:padding="4dp"
+                    android:src="@drawable/down_arrow" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:el_duration="500"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/txt_ans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:text="Date: 31st-Dec-2024"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/Gray"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/_5sdp"
+
+                    android:text="John Rechard"
+                    android:textColor="@color/Dark_Slate_Grey"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_5sdp"
+
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="left"
+                    android:text="Phone-+91-753355345"
+                    android:textColor="@color/Dark_Slate_Grey"
+                    android:textSize="9sp" />
+            </LinearLayout>
+        </net.cachapa.expandablelayout.ExpandableLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/white"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/ProjectGray"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/full_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:background="@drawable/gradient_bg_orenge">
+                <TextView
+                    android:layout_marginEnd="@dimen/_29sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/Red"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="2dp"
+                    android:text=" ₹ 4500.00"
+                    android:textColor="@color/White"
+                    android:textSize="13sp" />
+                <LinearLayout
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="@dimen/_60sdp"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_7sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="left"
+                        android:text="Green"
+                        android:textColor="@color/Black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:background="#735858"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingBottom="2dp"
+                        android:text="#7566r46"
+                        android:textColor="@color/White"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginEnd="3dp"
+                    android:id="@+id/arrow1"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:padding="4dp"
+                    android:src="@drawable/down_arrow" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:el_duration="500"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/txt_ans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:text="Date: 31st-Dec-2024"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/Gray"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/_5sdp"
+
+                    android:text="John Rechard"
+                    android:textColor="@color/Dark_Slate_Grey"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_5sdp"
+
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="left"
+                    android:text="Phone-+91-753355345"
+                    android:textColor="@color/Dark_Slate_Grey"
+                    android:textSize="9sp" />
+            </LinearLayout>
+        </net.cachapa.expandablelayout.ExpandableLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/white"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/Blue_Eyes"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/full_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:background="@drawable/gradient_bg_orenge">
+                <TextView
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_29sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/Red"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="2dp"
+                    android:text=" ₹ 1660.00"
+                    android:textColor="@color/White"
+                    android:textSize="13sp" />
+                <LinearLayout
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="@dimen/_60sdp"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_7sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="left"
+                        android:text="Yellow"
+                        android:textColor="@color/Black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:background="#735858"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingBottom="2dp"
+                        android:text="#7566r46"
+                        android:textColor="@color/White"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginEnd="3dp"
+                    android:id="@+id/arrow1"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:padding="4dp"
+                    android:src="@drawable/down_arrow" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:el_duration="500"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/txt_ans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:text="Date: 31st-Dec-2024"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/Gray"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/_5sdp"
+
+                    android:text="John Rechard"
+                    android:textColor="@color/Dark_Slate_Grey"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_5sdp"
+
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="left"
+                    android:text="Phone-+91-753355345"
+                    android:textColor="@color/Dark_Slate_Grey"
+                    android:textSize="9sp" />
+            </LinearLayout>
+        </net.cachapa.expandablelayout.ExpandableLayout>
+    </LinearLayout>
+
+</RelativeLayout>

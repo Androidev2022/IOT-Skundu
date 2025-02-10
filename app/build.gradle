@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 34
+
+    defaultConfig {
+        applicationId "com.iot.mechatronix"
+        minSdkVersion 21
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+        renderscriptTargetApi 18
+        renderscriptSupportModeEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lint {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.github.angads25:toggle:1.1.0'
+
+    //button Navigation (don't update version From 1.2.0)
+     implementation 'com.github.mohammadidiab:animated-bottom-navigation-bar:0.0.1'
+//depricated
+ //   implementation 'com.qhutch.elevationimageview:elevationimageview:2.4'
+    //gif imageview
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.27'
+    //Custom circle Image
+    implementation 'com.mikhaellopez:circularimageview:4.3.0'
+    //Glide image library
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation "com.airbnb.android:lottie:6.0.1"
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
+
+    //expendable layout
+    implementation 'com.github.cachapa:ExpandableLayout:2.9.2'
+    implementation 'com.orhanobut:logger:2.2.0'
+}

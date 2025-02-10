@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:background="@color/Dark_Forrest_Green"
+    android:padding="12dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginBottom="6dp"
+            android:id="@+id/nav_header_name_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="IOT Mechatronix"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:textColor="@color/White"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif"
+            android:text="ESP 32 CommunicationApp "
+            android:textSize="12sp"
+            android:textColor="@color/White"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif"
+            android:text="Implimented by Subhasish kundu"
+            android:textSize="12sp"
+            android:textColor="#BAB1AF"/>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

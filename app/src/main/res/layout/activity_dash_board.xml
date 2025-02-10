@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Status:"
+                android:textColor="@color/Dark_Forrest_Green"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bluetooth_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Device Output :"
+                android:textColor="@color/Dark_Forrest_Green"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/button_reconnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Re-Connect" />
+
+            <TextView
+                android:id="@+id/read_buffer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="@color/Green"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/btn_menu"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="7dp"
+            android:rotation="180"
+            android:src="@drawable/menu_new"
+            android:visibility="gone"
+            app:tint="@color/White" />
+
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/switch_new"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="13sp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:textSize="0dp"
+            android:visibility="gone"
+            app:colorBorder="#006A083D"
+            app:colorOff="@color/Red_Wine"
+            app:colorOn="@color/Green_Apple" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomNavigation">
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            </FrameLayout>
+        </LinearLayout>
+        <com.md.animatedbottomnavigationbarlib.ABottomNavigation
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            app:abn_selectedItemBackgroundColor="#3c415e"
+            app:abn_heightCell="80dp"
+            app:abn_titleTextColor="#393939"
+
+            app:abn_backgroundBottomColor="#FFFFFF"
+            app:abn_countBackgroundColor="#ff6f00"
+            app:abn_countTextColor="#00FFFFFF"
+            app:abn_defaultIconColor="#90a4ae"
+            app:abn_rippleColor="#2f424242"
+            app:abn_selectedIconColor="#ffffff"
+            app:abn_shadowColor="#1f212121" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:visibility="gone"
+        android:background="@color/White"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="16sp"
+            android:textColor="@color/Black"
+            android:gravity="left"
+            android:text="Scanning Devices" />
+
+        <ListView
+            android:layout_marginTop="10dp"
+            android:id="@+id/devices_list_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/send_layout"
+            android:layout_alignParentBottom="true"
+            android:background="@color/White"
+            android:choiceMode="singleChoice"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nv_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/White"
+        app:headerLayout="@layout/nav_header_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/drawer_item" />
+</androidx.drawerlayout.widget.DrawerLayout>

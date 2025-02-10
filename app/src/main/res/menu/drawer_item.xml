@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/paired_btn"
+                    android:icon="@drawable/bluetooth_paired"
+                    android:title="Paired devices" />
+
+                <item
+                    android:id="@+id/discover"
+                    android:icon="@drawable/bluetooth"
+                    android:title="New Devices" />
+
+
+
+        </group>
+
+</menu>
